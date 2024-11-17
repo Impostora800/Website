@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASHS PAGE 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            background-color: #90AACB;
+        }
+
+        header {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            background-color: #3282B8;
+            border-bottom: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            text-shadow: 0 0 8px rgba(255, 153, 51, 0.8), 0 0 16px rgba(255, 153, 51, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 8px rgba(255, 153, 51, 0.8), 0 0 16px rgba(255, 153, 51, 0.5);
+            }
+            to {
+                text-shadow: 0 0 12px rgba(255, 153, 51, 1), 0 0 24px rgba(255, 153, 51, 0.7);
+            }
+        }
+
+        .spinning-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            animation: spin 3s linear infinite;
+            margin: 20px 0;
+        }
+
+        .spinning-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .image-container {
+            position: relative;
+            width: 250px;
+            height: 150px;
+            margin: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay-text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+
+        .image-container:hover .overlay-text {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .paragraph-section {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .paragraph-section h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+            text-shadow: 0 0 8px rgba(0, 153, 255, 0.8), 0 0 16px rgba(0, 153, 255, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .paragraph-section p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            background-color: #3282B8;
+            border-top: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        SASHS STEM
+    </header>
+
+    <div class="spinning-image">
+        <img src="STEM.jpg" alt="Spinning Image">
+    </div>
+
+    <div class="section">
+        <div class="image-container">
+            <img src="mathe.jpg" alt="Mathematics">
+            <div class="overlay-text">MATHEMATICS</div>
+        </div>
+        <div class="image-container">
+            <img src="science.jpg" alt="Science">
+            <div class="overlay-text">SCIENCE</div>
+        </div>
+        <div class="image-container">
+            <img src="STEM.jpg" alt="STEM">
+            <div class="overlay-text">STEM</div>
+        </div>
+    </div>
+
+    <div class="paragraph-section">
+        <h2>What is Stem?</h2>
+        <p> STEM stands for Science, Technology, Engineering, and Mathematics. It encompasses various academic and professional fields that focus on the practical application of scientific and mathematical principles to develop innovative solutions, technologies, and products. STEM education and careers span across disciplines like physics, biology, computer science, engineering, mathematics, and data analysis. STEM fields drive innovation, economic growth, and improvement in quality of life.</p>
+    </div>
+
+    <div class="paragraph-section">
+        <h2>Why STEM?</h2>
+        <p>Joining the STEM community offers a wealth of opportunities for innovative minds. By pursuing a career in Science, Technology, Engineering, and Mathematics, you'll develop problem-solving skills, creativity, and critical thinking. STEM fields drive global progress, addressing pressing issues like climate change, healthcare, and sustainable development.</p>
+        <a href="index.html"><button class="back-button" onclick="history.back()">Go Back</button></a>
+    </div>
+
+    <footer>
+        <p>Created on <span id="date"></span> by Adrian and James</p>
+    </footer>
+
+    <script>
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
+        document.getElementById("date").textContent = formattedDate;
+    </script>
+
+</body>
+</html>

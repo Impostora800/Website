@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASHS GAS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #CFE9F7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #90AACB;
+      color: #fff;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      animation: spin 4s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .section {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .paragraph-section {
+      width: 90%;
+      max-width: 1200px;
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 1rem 0;
+      text-align: left;
+    }
+
+    .back-button {
+      margin: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #90AACB;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1rem;
+      position: fixed;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="SASHS.jpeg" alt="Logo" class="logo">
+      SASHS GAS
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <img src="mathe.jpg" alt="Mathematics">
+      <p>Mathematics</p>
+    </div>
+    <div class="section">
+      <img src="science.jpg" alt="Life Science">
+      <p>Life Science</p>
+    </div>
+    <div class="section">
+      <img src="kuryente.jpg" alt="Image 3">
+      <p>Gas</p>
+    </div>
+  </div>
+
+  <div class="paragraph-section">
+    <p>Paragraph Section 1: GAS (General Academics) is an Excellent choice for students who are Undecided of which strand they want to go, GAS is a flexible strand offering intermediate courses coming from all subjects.</p>
+  </div>
+  
+  <div class="paragraph-section">
+    <p>General Academics is perfect for:
+
+1. Undecided students
+2. Those seeking a broad-based education
+3. Students interested in interdisciplinary approaches
+4. Those preparing for graduate school
+5. Individuals seeking personal enrichment </p>
+  </div>
+
+  <a href="index.html"><button class="back-button" onclick="window.history.back();">Go Back</button></a>
+
+  <footer>
+    <script>
+      document.write(`&copy; ${new Date().getFullYear()} Adrian and James`);
+    </script>
+  </footer>
+
+</body>
+</html>

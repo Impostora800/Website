@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASHS HUMSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3282B8;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            animation: fade 3s infinite;
+        }
+        @keyframes fade {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .image-container {
+            width: 80%;
+            margin: 20px auto;
+            border: 10px solid;
+            border-image: url('border-image.png') 30 round;
+        }
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        section {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #90AACB;
+        }
+        .transition {
+            width: 100%;
+            height: 20px;
+            background: linear-gradient(90deg, #90AACB, #2196F3);
+            margin: 20px 0;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        footer {
+            text-align: center;
+            background-color: #3282B8;
+            color: white;
+            padding: 5px 0; /* Reduced padding */
+            font-size: 12px; /* Smaller font size */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .back-button {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #90AACB;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #3282B8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="SASHS.jpeg" alt="Logo">
+        <h1>SASHS HUMSS</h1>
+    </header>
+
+    <!-- Image with Border -->
+    <div class="image-container">
+        <img src="hums.png" alt="Decorative Image">
+    </div>
+
+    <section>
+        <h2>What is HUMSS?</h2>
+        <p>HUMSS stands for Humanities and Social Sciences. It's an academic strand or track in senior high school (SHS) in the Philippines, under the K-12 education system.
+
+        HUMSS focuses on:
+
+        *Humanities:*
+
+        1. Languages (English, Filipino, etc.)
+        2. History
+        3. Philosophy
+        4. Arts (music, theater, visual arts)
+        5. Literature
+
+        *Social Sciences:*
+
+        1. Psychology
+        2. Sociology
+        3. Anthropology
+        4. Economics
+        5. Political Science
+        </p>
+    </section>
+
+    <section>
+        <h2>Why join HUMSS?</h2>
+        <p> HUMSS aims to:
+
+        1. Develop critical thinking and analytical skills
+        2. Foster empathy, cultural understanding, and social responsibility
+        3. Prepare students for diverse careers
+        4. Encourage creative expression and problem-solving
+        5. Cultivate effective communication and collaboration skills
+        </p>
+    </section>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">Back</a>
+
+    <!-- Transition Element -->
+    <div class="transition"></div>
+
+    <video controls>
+        <source src="sleepwalker.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p style="text-align: center;">Sleepwalker</p>
+
+    <footer>
+        <p>By Adrian and James</p>
+        <p id="date-time"></p>
+    </footer>
+
+    <script>
+        // Set the current date and time in the footer
+        const dateTimeElement = document.getElementById('date-time');
+        const now = new Date();
+        dateTimeElement.textContent = now.toLocaleString();
+    </script>
+
+</body>
+</html>

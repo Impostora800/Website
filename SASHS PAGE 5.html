@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASHS TVL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #90AACB;
+        }
+        header {
+            background-color: #3282B8;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #4CAF50, #81C784);
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px;
+            padding: 15px;
+            border: 10px solid transparent;
+            border-image: url('your-border-image.jpg') 30 stretch;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+        section p {
+            margin: 0;
+            padding: 10px;
+            border: 10px solid transparent;
+            border-image: url('your-paragraph-border-image.jpg') 20 round;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .images-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .images-container img {
+            width: 200px;
+            height: auto;
+            margin: 0 10px;
+            border: 10px solid transparent;
+            border-image: url('Bord.jpg') 30 stretch;
+            border-radius: 10px;
+        }
+        .back-button {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #3282B8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #d32f2f;
+        }
+        footer {
+            text-align: center;
+            background-color: #3282B8;
+            color: white;
+            padding: 5px 0;
+            font-size: 0.9em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="SASHS.jpeg" alt="Logo">
+        <h1>SASHS TVL</h1>
+    </header>
+
+    <!-- Section 1 -->
+    <section>
+        <h2>What is TVL?</h2>
+        <p>The Technical-Vocational-Livelihood (TVL) track is designed for students who wish to gain practical and job-ready skills. It covers various specializations such as cookery, electronics, and caregiving, among others.</p>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+        <h2>Why choose TVL?</h2>
+        <p>TVL provides hands-on training and certification that makes students ready for employment after senior high school. It is ideal for those who want to enter the workforce or start their businesses.</p>
+    </section>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">Back</a>
+
+    <!-- Images Side by Side -->
+    <div class="images-container">
+        <img src="ictt.jpeg" alt="Image 1">
+        <img src="kuryente.jpg" alt="Image 2">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>By Adrian and James</p>
+        <p id="date-time"></p>
+    </footer>
+
+    <script>
+        // Set the current date and time in the footer
+        const dateTimeElement = document.getElementById('date-time');
+        const now = new Date();
+        dateTimeElement.textContent = now.toLocaleString();
+    </script>
+
+</body>
+</html>

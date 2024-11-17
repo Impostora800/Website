@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASHS Page 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3282B8;
+            color: #4B4D63;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            background-color: #8A9DA4;
+            padding: 10px;
+        }
+
+        .navbar {
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+            float: left;
+        }
+        
+        .navbar a:hover {
+            background-color: #8A9DA4;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            color: #fff;
+            padding: 14px 20px;
+            background-color: #8A9DA4;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #666;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Placeholder Image */
+        .header-image {
+            margin-left: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-image: url('deped.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Sections */
+        .section {
+            padding: 40px;
+            margin: 20px;
+            background-color: #90AACB;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image Styling */
+        .image-container {
+            position: relative;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        /* Optional: Caption or Overlay Text on Image */
+        .image-container .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Container with Navbar and Image -->
+    <div class="header-container">
+        <!-- Navigation Bar with Drop-Down Menu -->
+        <div class="navbar">
+            <a href="#section1">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">SASHS</button>
+                <div class="dropdown-content">
+                    <a href="SASHS PAGE 2.html">STEM</a>
+                    <a href="SASHS PAGE 3.html">GAS</a>
+                    <a href="SASHS PAGE 4.html">HUMSS</a>
+                    <a href="SASHS PAGE 5.html">TVL</a>
+                </div>
+            </div>
+            <a href="#about">About</a>
+        </div>
+        <!-- Placeholder Image Next to Navbar -->
+        <div class="header-image"></div>
+    </div>
+
+    <!-- First Section -->
+    <div id="Details 1" class="section">
+        <h2>Section 1</h2>
+        <p>This is Stand Alone Senior Highschool </p>
+        <div class="image-container">
+            <img src="SASHS.jpeg" alt="hehehehe">
+            <div class="overlay-text">SASHS</div>
+        </div>
+    </div>
+
+    <!-- Second Section -->
+    <div id="section2" class="section">
+        <h2>Details 2</h2>
+        <p>A gathering of students for a flag ceremony</p>
+        <div class="image-container">
+            <img src="hdfg.jpeg" alt="Sweetheart">
+        </div>
+    </div>
+
+    <!-- Third Section -->
+    <div id="section3" class="section">
+        <h2>Details 3</h2>
+        <p>This is the SASHS, a prestige learning environment, built in () it is a school fitted for hundreds of students and is designed to teach 4 strands to prepare students for College and advanced education</p>
+        <div class="image-container">
+            <img src="Standalone.jpeg" alt="Melody">
+            <div class="overlay-text">SASHS</div>
+        </div>
+    </div>
+
+    <!-- Optional: About Section -->
+    <div id="about" class="section">
+        <h2>About</h2>
+        <p>SASHS is a school, integrated within TIS (Taguig Integrated School) housing more than 600 students of Senior High</p>
+    </div>
+
+    <!-- Optional: Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Copyright @ Disclaimer of 2024</p>
+    </div>
+
+</body>
+</html>
